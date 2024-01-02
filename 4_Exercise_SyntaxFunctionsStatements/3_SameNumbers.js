@@ -1,18 +1,19 @@
 function solve(num) {
     let numStr = num.toString();
+    let isSame = true;
     let sum = 0;
-    let result = true;
+
+    let digitToCompare = numStr[0];
 
     for (let i = 0; i < numStr.length; i++) {
         sum += Number(numStr[i])
-        for(let z = 0; z<numStr.length; z++){
-            if (numStr[i] !== numStr[z]) {
-                result = false;
-            
-            }
+
+        if (numStr[i] !== digitToCompare) {
+            isSame = false;
         }
-    }
-    console.log(result);
+    };
+    
+    console.log(isSame);
     console.log(sum);
 };
 
