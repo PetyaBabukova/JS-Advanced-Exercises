@@ -8,7 +8,7 @@ function solve(commands) {
         } else {
             result.pop()
         }
-    }
+    };
 
     if (result.length>0) {
         for (let i = 0; i < result.length; i++) {
