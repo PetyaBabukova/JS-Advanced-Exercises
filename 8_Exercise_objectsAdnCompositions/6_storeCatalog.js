@@ -6,7 +6,6 @@ function solve(input) {
         let [key, value] = item.split(' : ');
         let firstLetter = key[0];
 
-        // Initialize an object for this firstLetter if it doesn't exist
         if (!result[firstLetter]) {
             result[firstLetter] = {};
         }
@@ -14,7 +13,6 @@ function solve(input) {
         result[firstLetter][key] = value;
     });
 
-    // Output the result object
     for (let letter in result) {
         console.log(letter);
         for (let key in result[letter]) {

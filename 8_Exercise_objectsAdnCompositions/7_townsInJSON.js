@@ -15,9 +15,9 @@ function solve(input) {
         // Add the town object to the towns array
         towns.push({Town: town, Latitude: latitude, Longitude: longitude});
     });
-
     // Convert the towns array to JSON
     return JSON.stringify(towns);
+
 }
 
 

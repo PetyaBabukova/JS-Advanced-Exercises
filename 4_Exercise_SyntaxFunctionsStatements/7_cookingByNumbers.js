@@ -5,23 +5,6 @@ function solve(a, b, c, d, e, f) {
     for (let i = 0; i < commands.length; i++) {
         let currentCommand = commands[i];
 
-        // if (currentCommand === 'chop') {
-        //     num = num / 2;
-        //     console.log(num);
-        // } else if (currentCommand === 'dice') {
-        //     num = Math.sqrt(num);
-        //     console.log(num);
-        // } else if (currentCommand === 'spice') {
-        //     num = num + 1
-        //     console.log(num);
-        // } else if (currentCommand === 'bake') {
-        //     num = num * 3
-        //     console.log(num);
-        // } else if (currentCommand === 'fillet') {
-        //     num = num * 0.8
-        //     console.log(num.toFixed(1));
-        // }
-
         switch (currentCommand) {
             case 'chop':
                 num = num / 2
@@ -52,9 +35,7 @@ function solve(a, b, c, d, e, f) {
                 console.log("There are no available commands");
                 break;
         }
-
     }
-
 };
 
 // solve('32', 'chop', 'chop', 'chop', 'chop', 'chop');
