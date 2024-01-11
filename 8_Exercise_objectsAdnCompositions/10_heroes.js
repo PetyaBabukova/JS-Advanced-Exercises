@@ -1,10 +1,63 @@
-function solve() {
-    let hero = {
-        health: 100,
-        stamina: 100,
-        mage: ()=>{
+// function solve() {
+//     function fighter(name){
+//         return {
+//             name,
+//             stamina: 100,
+//             health: 100,
+//             fight: function(){
+//                 this.stamina --;
+//                 console.log(`${this.name} slashes at the foe!`);
+//             }
+//         };
+//     };
 
-        }
+//     function mage(name){
+//         return {
+//             name,
+//             health: 100,
+//             mana: 100,
+//             cast: function (spell){
+//                 this.mana --
+//                 console.log(`${this.name} cast ${spell}`);
+//             }
+//         };
+//     };
+
+//     return {
+//         fighter,
+//         mage
+//     }
+// };
+
+
+function solve() {
+    let fighter = (name)=>{
+        return {
+            name,
+            stamina: 100,
+            health: 100,
+            fight: function(){
+                this.stamina --;
+                console.log(`${name} slashes at the foe!`);
+            }
+        };
+    };
+
+    let mage= (name)=>{
+        return {
+            name,
+            health: 100,
+            mana: 100,
+            cast: function (spell){
+                this.mana --
+                console.log(`${name} cast ${spell}`);
+            }
+        };
+    };
+
+    return {
+        fighter,
+        mage
     }
 };
 
