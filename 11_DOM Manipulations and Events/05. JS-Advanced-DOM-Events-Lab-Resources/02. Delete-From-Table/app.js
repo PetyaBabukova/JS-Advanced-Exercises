@@ -14,6 +14,7 @@ function deleteByEmail() {
     // targetElement.parentNode.removeChild(targetElement); //Old fasion
     if (targetElement) {
         targetElement.parentNode.remove(); // New way
+        // targetElement.parentElement.remove(); // ???
         resultElement.textContent = 'Deleted.'
     } else {
         resultElement.textContent = 'Not found.'
