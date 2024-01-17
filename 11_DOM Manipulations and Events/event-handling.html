@@ -24,11 +24,20 @@
 
 
     <script>
+        // // Difference between parentElement and parentNode
+        // let headingElement = document.querySelector('h1');
+        // console.log(headingElement.parentElement.parentElement.parentElement);
+        // console.log(headingElement.parentElement.parentElement.parentNode);
+
         let movieElements = document.querySelectorAll('#movie-list li');
 
         movieElements.forEach(el => {
-            el.addEventListener('click', (e) => {
+            el.addEventListener('click', function(e) {
                 //console.log(e.currentTarget.textContent);
+                
+                //this == e.currentTarget in function declaration or expresion! in Arrow functions - not!!!
+                // console.log(this == e.currentTarget); 
+
                 e.currentTarget.style.textDecoration = 'line-through';
             });
         });
